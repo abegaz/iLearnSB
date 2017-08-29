@@ -1,15 +1,14 @@
 Functional requirements
 1. New users have to register or sign up.
-2. Users are able to login so the program better caters to that specific user and their profile is more personal.
-3. A place to hold/submit user's homework, study materials, 
-4.
-5.
-6.
-7.
+2. Users are able to securely login so the program better caters to that specific user and their profile is more personal.
+3. A place to hold/submit user's homework, study materials, discussions, grades, quizzes
+4. Lists student's and professor's classes.
+5. Ability to embed videos.
+6. Implement an alert system for deadlines, new assignments, announcements, and replies to discussion posts.
+7. Professor and student have clear separation of authority (hierarchy).
 8.
 9.
 10.
-
 Non-functional requirements
 1. Must be written in Java.
-2.
+2. Must be accessible online. 
