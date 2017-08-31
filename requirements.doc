@@ -1,16 +1,16 @@
 Functional requirements
 Should Do
 1. New users have to register or sign up.
-2. Users are able to securely login so the program better caters to that specific user and their profile is more personal I/O.
+2. Users are able to securely login to their own personal profile. 
 3. A place to hold/submit user's homework, study materials, discussions, grades, quizzes
 4. Lists student's and professor's classes.
 5. Ability to embed videos.
 6. Implement an alert system for deadlines, new assignments, announcements, and replies to discussion posts.
 7. Professor and student have clear separation of authority (hierarchy).
 8. Have a way to connect .doc files to plagiarism detector.
-9. 
 Should Not Do
 1. Student's grades should not be able to be accessed by other students. 
+2. Only Teachers have the ability to add, drop or change grades.
 Non-functional requirements
 1. Must be written in Java.
 2. Must be accessible online. 
