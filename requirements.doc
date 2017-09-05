@@ -9,10 +9,11 @@ Should Do
 7. Professor and student have clear separation of authority (hierarchy).
 8. Have a way to connect .doc files to plagiarism detector.
 9. Only Teachers have the ability to add, drop or change grades.
-10.
+10.Teachers can leave comments on test, quizes, and homework that students are able to view.
 
 Should Not Do
 1. Student's grades should not be able to be accessed by other students. 
+
 Non-functional requirements
 1. Must be written in Java.
 2. Must be accessible online. 
