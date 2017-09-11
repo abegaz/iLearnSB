@@ -9,16 +9,22 @@ Initial login screen
 			The information the user input is saved together and now the user can log in and is redirected to the login page.
 	
 
-Home page
+Student Home page
 	Shows list of classes the user is taking
 	Buttons on home page
 		User settings button
+			When clicked there will be options for the user to change…
 		Help button
-		Other…
+			When clicked there will be options for the user to 
+				See how to navigate Ilearn
+				Learn how to change password
+				…
+		Other buttons…
 
-Class pages
-	Home button to take user back to Home page
-	Class home button to take user back to the current classes page
+Student Class pages
+	Displays class name
+	Home button to take student back to Student Home page
+	Class home button to take student back to the current class's page
 	List the latest course material added
 	List upcoming events/due dates for assignments and test/quizzes
 	
@@ -26,5 +32,44 @@ Class pages
 		Assignment tab: displays all assigned work the teacher wants the students to do
 		Quizzes/test tab: Displays a list of all quizzes or test the teacher has available for the student to take
 		Grades tab: displays a list of all grades for assignments, work, and test/quizzes the student has done
-	
 
+Teacher Home page
+	Shows list of classes the teacher is teaching 
+	Buttons on home page
+		User settings button
+			When clicked there will be options for the user to change…
+		Help button
+			When clicked there will be options for the user to 
+				See how to navigate Ilearn
+				Learn how to change password
+				…
+		Other buttons…
+	
+	
+Teacher class pages
+	Displays class name
+	Home button to take teacher back to teacher Home page
+	Class home button to take teacher back to the current class's page
+	List the latest course material added
+	List upcoming events/due dates for assignments and test/quizzes
+	
+		Material tab: displays lecture ppt/ documents the teacher wants to share with their students
+			Has an option to add new material in New material page.
+				New material page allows teachers to upload wanted documents
+					Has an area to add a title and description for the material
+		Assignment tab: displays all assigned work the teacher wants the students to do
+			Has an option to add new assignments in New assignments page.
+				New assignments page allows teachers to list assignments and upload documents for the assignment.
+					Has an area to add a title and description for the material
+		Quizzes/test tab: Displays a list of all quizzes or test the teacher has available for the student to take
+			Has an option to add new Quiz/Test in New Quiz/Test page.
+				New Quiz/Test page allows teachers to make a Quiz/test with questions and answer choices, being multiple choice, true/false, or short answer.
+					Has an area to add a title and description for the Quiz/Test
+					Has an option to have the answers available to the computer so it will be graded automatically or the teacher can grade the Quiz/Test themselves.
+					Once Quiz/test is graded teacher can add a comment to each question/answer 
+			
+		Grades tab: displays a list of all grades for assignments, work, and test/quizzes the student has done
+			Has an option to add a new grade
+				Change an existing grade
+				Or even delete a grade.
+				Also has an option for the teacher to leave comments for each grade.
