@@ -1,1 +1,30 @@
+Initial login screen
+	Choice to log in
+		If log in failed, user will be prompted to enter password again, 
+			create account, which will direct them to the create account page, and 
+			A help button will be there if user needs help
+	Choice to create account if user doesn’t have one
+		If selected takes user to a create account page
+			User inputs a username and creates a password
+			The information the user input is saved together and now the user can log in and is redirected to the login page.
+	
+
+Home page
+	Shows list of classes the user is taking
+	Buttons on home page
+		User settings button
+		Help button
+		Other…
+
+Class pages
+	Home button to take user back to Home page
+	Class home button to take user back to the current classes page
+	List the latest course material added
+	List upcoming events/due dates for assignments and test/quizzes
+	
+		Material tab: displays lecture ppt/ documents the teacher wants to share with their students
+		Assignment tab: displays all assigned work the teacher wants the students to do
+		Quizzes/test tab: Displays a list of all quizzes or test the teacher has available for the student to take
+		Grades tab: displays a list of all grades for assignments, work, and test/quizzes the student has done
+	
 
