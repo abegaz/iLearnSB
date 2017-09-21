@@ -1,0 +1,19 @@
+How to push file
+Step 1
+	git init
+Step 2
+	git status
+Step 3
+	git add test.txt
+Step 4
+	git status
+Step 5
+	git commit -m 'Added test.txt'
+Step 6 
+	git push -u origin master
+
+How to pull file
+Step 1
+	git init
+Step 2
+	git pull origin master
