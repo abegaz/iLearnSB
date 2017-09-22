@@ -18,6 +18,8 @@ Student Home page
 			When clicked there will be options for the user to 
 				See how to navigate Ilearn
 				Learn how to change password
+		Display anouncements such as class cancel, homework/test/quize has been graded, etc		
+		
 				…
 		Other buttons…
 
@@ -27,6 +29,7 @@ Student Class pages
 	Class home button to take student back to the current class's page
 	List the latest course material added
 	List upcoming events/due dates for assignments and test/quizzes
+	Display anouncements such as class cancel, homework/test/quize has been graded, etc		
 	
 		Material tab: displays lecture ppt/ documents the teacher wants to share with their students
 		Assignment tab: displays all assigned work the teacher wants the students to do
