@@ -3,6 +3,9 @@ Initial login screen
 		If log in failed, user will be prompted to enter password again, 
 			create account, which will direct them to the create account page, and 
 			A help button will be there if user needs help
+	Choice for PW recovery
+		If user choose to admit they have forgotten password, link will direct them to an alternate page where a password
+		reset can be navigated.
 	Choice to create account if user doesn’t have one
 		If selected takes user to a create account page
 			User inputs a username and creates a password
@@ -19,7 +22,9 @@ Student Home page
 				See how to navigate Ilearn
 				Learn how to change password
 		Display anouncements such as class cancel, homework/test/quize has been graded, etc		
-		
+		Calendar button
+			When clicked, monthly calendar will display with any permanent events (holidays, maintenence, etc.), and all class
+			dates can be referenced in one location.
 				…
 		Other buttons…
 
