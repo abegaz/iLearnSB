@@ -7,6 +7,10 @@ As a Student,
 I want to be confident in my grades not being tampered with, by only the teacher being able add, drop, or change my grades.
 So that I can be sure that my grades are true to my performance. 
 
+As a student,
+I want to have access to to class lists and general contact information so as I might reach out for help from and give help to fellow 
+classmates.
+
 As a professor,
 I want to be able to contact students and be able to see work that they've submitted 
 so that there is a clear line of communication between myself and them.
@@ -18,3 +22,7 @@ the course content before the class.
 As a professor,
 I want my anouncements to be broadcast to all my students,
 so the student can receive impotant anouncements like class cancel, homework/grade updates, etc 
+
+As a professor,
+I want to be able to cross check student submissions and coursework with a database to check for plagiriasm and cheating. It is important
+to maintain integrity and honesty.
