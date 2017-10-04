@@ -4,12 +4,8 @@ Initial login screen
 			create account, which will direct them to the create account page, and 
 			A help button will be there if user needs help
 	Choice for PW recovery
-		If user choose to admit they have forgotten password, link will direct them to an alternate page where a password
-		reset can be navigated.
-	Choice to create account if user doesn’t have one
-		If selected takes user to a create account page
-			User inputs a username and creates a password
-			The information the user input is saved together and now the user can log in and is redirected to the login page.
+		If user choose to admit they have forgotten password, text on screen will direct them to a phone number they can call in
+		order to reset password with certain credentials.
 	
 
 Student Home page
