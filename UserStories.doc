@@ -26,4 +26,10 @@ so the student can receive impotant anouncements like class cancel, homework/gra
 As a professor,
 I want to be able to cross check student submissions and coursework with a database to check for plagiriasm and cheating. It is important
 to maintain integrity and honesty.
+
+As a general user, I want to see the software function with reliability and readability using a well-known language such as Java. This gaurentees
+a minimal reliability and readability.
+
+As a general user, I need to be able to access my profile and connect with my classes and professors at any time. This means I need online
+functionality to connect whenever and wherever I can.
 Good!
