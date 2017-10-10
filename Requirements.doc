@@ -21,7 +21,7 @@ Should Not Do
 7. Student should not change the due date of the assignment
 8. Student should not register the two classes that have the same class time
 9. Student should not add/delete any thing in the class material container
-10. All users should upload any obscene/ offensive content.
+10. All users should not upload any obscene/ offensive content.
 
 Non-functional requirements
 1. Must be written in Java.
