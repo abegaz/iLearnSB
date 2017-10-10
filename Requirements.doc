@@ -12,9 +12,25 @@ Should Do
 10.Teachers can leave comments on test, quizes, and homework that students are able to view.
 
 Should Not Do
-1. Student's grades should not be able to be accessed by other students. 
-
+1. Student's grades should not be able to be accessed by other students.
+2. Student should not change their grades
+3. Student should not submit assignment after the deadline
+4. Student should not submit the same file
+5. teacher should not give class materials to a student who do not register this teacher's class.
+6. teacher should not grade a student who do not in this teacher's class
+7. Student should not change the due date of the assignment
+8. Student should not register the two classes that have the same class time
+9. Student should not add/delete any thing the in 
 Non-functional requirements
 1. Must be written in Java.
 2. Must be accessible online.
+3. Must be safe from hackings
+4. Must protect privacy
+5. Must be available 24/7
+6. Must be fast when requst/respond
+7. Must have compatibility for different web browsers
+8. Must not crash when loading lots of contents 
+9. Must have backup in case the data is lost
+10. Must have enough space to store matirials
+ 
 Good!
