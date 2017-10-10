@@ -1,4 +1,4 @@
-
+Should do:
 As a Student,
 I want to be able to view comments made by the teacher on homework, test, and Quizzes, 
 so that I can better learn from my mistakes.
@@ -12,24 +12,85 @@ I want to have access to to class lists and general contact information so as I 
 classmates.
 
 As a professor,
-I want to be able to contact students and be able to see work that they've submitted 
-so that there is a clear line of communication between myself and them.
+I want to be able to contact students and be able to see work that they've submitted so that there is a clear line of communication between myself and them.
 
 As a professor,
 I want all my course materials to be acessible to all my students. So the students can review the course content after class or preview
 the course content before the class.
-
-As a professor,
-I want my anouncements to be broadcast to all my students,
-so the student can receive impotant anouncements like class cancel, homework/grade updates, etc 
-
+As a professor,I want my anouncements to be broadcast to all my students,
+rso the student can receive impotant anouncements like class cancel, homework/grade updates, etc 
+s
 As a professor,
 I want to be able to cross check student submissions and coursework with a database to check for plagiriasm and cheating. It is important
-to maintain integrity and honesty.
+zto maintain integrity and honesty.
+Should not do:
+sd
+As a Student, my grades should not be able to be accessed by other students, 
+So anyone will not know my grades without my permission.
+
+As a teacher, I want the grades should not be changed by student.
+tSo that the performents of student will meet the requirment of academic integrety
+
+As a teacher, I want the dropbox should not be open when assignment is due.
+So the student will finish their work on time
+
+As a student, I want the others should not submit the same file as I am
+So I will not be charged for cheat/steal the homework
+
+As a teacher, I want my materials should not be accessed by student who are not in my classSo only my student can use my materials.
+
+AS a teacher, I dont want my test/ assignment to be graded by other teachers.
+So I am responsible to my student
+
+As a teacher I dont want my student change the due date of the assignment
+So my student can finish the work on time
+
+AS a student, I dont want to register the classes that are the same class time
+So my schedule is not conflicted
+
+As a teacher, I dont want anyone but me can modify the class material
+So I am in the control
+
+AS a user, I dont want anyone one upload obscene/offensive content to iLearn
+So the environment is clean and hamounious.
+
+
+
+Non-functional
 
 As a general user, I want to see the software function with reliability and readability using a well-known language such as Java. This gaurentees
 a minimal reliability and readability.
 
 As a general user, I need to be able to access my profile and connect with my classes and professors at any time. This means I need online
 functionality to connect whenever and wherever I can.
-Good!
+
+
+
+AS a general user, I want the system is safe from hacking,
+So I can use it without distraction and concern
+
+As a general user,  I want the 
+
+As a general user, I want this app is availeble 24/7
+So I can use it freely.
+
+AS a general user, I want this app runs fast when handling request/ respond
+So I can safe my time doing other stuff.
+
+As a general user, I want this app to be compatible
+ So I can use it at any browsers
+
+As a general user , I want this app to be stable
+So It wont crash during the tasks.
+
+AS a general user, I want the app to have a backup system
+So it can retrive the users data when it crashes. 
+
+AS a general users, I want the app to have enough space to store files,
+So the file container will not overflow 
+
+
+
+
+
+Good
