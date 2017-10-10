@@ -20,7 +20,9 @@ Should Not Do
 6. teacher should not grade a student who do not in this teacher's class
 7. Student should not change the due date of the assignment
 8. Student should not register the two classes that have the same class time
-9. Student should not add/delete any thing the in 
+9. Student should not add/delete any thing in the class material container
+10. All users should upload any obscene/ offensive content.
+
 Non-functional requirements
 1. Must be written in Java.
 2. Must be accessible online.
