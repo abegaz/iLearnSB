@@ -6,16 +6,15 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <Button layoutX="367.0" layoutY="241.0" mnemonicParsing="false" text="Button" />
+      <Button fx:id="Login" layoutX="260.0" layoutY="243.0" mnemonicParsing="false" text="Login" />
       <Hyperlink layoutX="58.0" layoutY="345.0" text="Hyperlink" />
-      <TextField layoutX="318.0" layoutY="127.0" />
-      <TextField layoutX="318.0" layoutY="175.0" />
-      <Label layoutX="159.0" layoutY="131.0" text="Label" />
-      <Label layoutX="159.0" layoutY="179.0" text="Label" />
-      <Label layoutX="286.0" layoutY="45.0" text="Label" />
+      <TextField fx:id="UserName" layoutX="226.0" layoutY="127.0" promptText="Enter Username" />
+      <TextField fx:id="Password" layoutX="226.0" layoutY="175.0" promptText="Enter Password" />
+      <Label layoutX="116.0" layoutY="131.0" text="UserName" />
+      <Label layoutX="121.0" layoutY="179.0" text="Password" />
+      <Label layoutX="221.0" layoutY="62.0" text="Ilearn Login " />
       <Label layoutX="74.0" layoutY="317.0" text="Label" />
    </children>
 </AnchorPane>
