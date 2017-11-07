@@ -6,15 +6,15 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="397.0" prefWidth="509.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.iLearn.controller.SampleController">
    <children>
-      <Button fx:id="Login" layoutX="260.0" layoutY="243.0" mnemonicParsing="false" text="Login" />
+      <Button fx:id="Login" layoutX="260.0" layoutY="243.0" mnemonicParsing="false" onAction="#login" text="Login" />
       <Hyperlink layoutX="58.0" layoutY="345.0" text="Hyperlink" />
       <TextField fx:id="UserName" layoutX="226.0" layoutY="127.0" promptText="Enter Username" />
       <TextField fx:id="Password" layoutX="226.0" layoutY="175.0" promptText="Enter Password" />
       <Label layoutX="116.0" layoutY="131.0" text="UserName" />
       <Label layoutX="121.0" layoutY="179.0" text="Password" />
       <Label layoutX="221.0" layoutY="62.0" text="Ilearn Login " />
-      <Label layoutX="74.0" layoutY="317.0" text="Label" />
+      <Label fx:id="notice2" layoutX="74.0" layoutY="317.0" text="Label" />
    </children>
 </AnchorPane>
