@@ -4,18 +4,18 @@ import java.sql.*;
 
 public class DBConnect {
 
-	public static void main(String[] args){
 
-		 DBConnect dog = new DBConnect();
 
-	}
-
-	public DBConnect() {
-
-	}
 		private static final String USERNAME = "root";
 		private static final String PASSWORD = "";
 		private static final String CONN_STRING = "jdbc:mysql://localhost/ilearn";
+
+		public static void main(String[] args){
+
+			getStuff();
+
+
+		}
 
 		// connection  method that connects us to the MySQL database
 		public static Connection getConnection() throws SQLException{
@@ -29,6 +29,20 @@ public class DBConnect {
 			System.err.println("Error Message: " + ex.getMessage());
 			System.err.println("Error Code: " + ex.getErrorCode());
 			System.err.println("SQL Status: " + ex.getSQLState());
-	}
 
+	}
+		public static void getStuff(){
+			try{
+			Connection connn = getConnection();
+					PreparedStatement statement = connn.prepareStatement("SELECT firstname FROM users WHERE id = '4'");
+					ResultSet reslut = statement.executeQuery();
+					while(reslut.next())
+					System.out.println(reslut.getString("firstname"));
+					connn.close();
+			}catch(Exception e){
+				e.printStackTrace();
+			}
+		}
 }
+
+

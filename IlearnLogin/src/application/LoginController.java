@@ -10,7 +10,7 @@ public class LoginController {
 		@FXML TextField UserName;
 		@FXML TextField Password;
 		public void login(){
-
-			//notice.setText(UserName.getText());
+			//DBConnect connect = new DBConnect();
+			notice.setText(UserName.getText());
 		}
 }
