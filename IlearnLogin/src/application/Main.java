@@ -26,7 +26,7 @@ public class Main extends Application {
 	}
 
 	public static void main(String[] args) {
-		DBConnect connect = new DBConnect();
+		//DBConnect connect = new DBConnect();
 		launch(args);
 
 	}
