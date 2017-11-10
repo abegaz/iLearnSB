@@ -1,8 +1,11 @@
 package application;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.sql.PreparedStatement;
 
 import javafx.event.ActionEvent;
@@ -15,14 +18,18 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 public class LoginController {
 
 		@FXML Label notice;
 		@FXML TextField UserName;
-		//@FXML TextField Password;
+		@FXML Label helptxt;
 		@FXML PasswordField Password;
+		String use;
+
+
 		public void login(ActionEvent event) throws Exception{
 			//DBConnect connect = new DBConnect();
 			//notice.setText(UserName.getText());
@@ -31,6 +38,8 @@ public class LoginController {
 			//ResultSet rs = null;
 
 			//Connection connection;
+
+
 			PreparedStatement ps;
 
 			try{
@@ -41,13 +50,36 @@ public class LoginController {
 				ResultSet result = ps.executeQuery();
 				if(result.next()){
 
+					use = (UserName.getText());
+
+					FXMLLoader Loader = new FXMLLoader();
+					Loader.setLocation(getClass().getResource("HomePage.fxml"));
+					try {
+						Loader.load();
+					} catch (IOException ex){
+						Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
+					}
+					HomePageController display = Loader.getController();
+					display.setText(use);
+
+
+					Parent p = Loader.getRoot();
+					Stage stage = new Stage();
+					stage.setScene(new Scene(p));
+					stage.showAndWait();
+
+					/*
 					Stage primaryStage = new Stage();
 					AnchorPane root = (AnchorPane)FXMLLoader.load(getClass().getResource("HomePage.fxml"));
-					Scene scene = new Scene(root,1000,1000);
+					Scene scene = new Scene(root,917,700);
 					scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 					primaryStage.setScene(scene);
 					primaryStage.show();
+					*/
 					((Node)event.getSource()).getScene().getWindow().hide();
+
+
+
 					notice.setText("correct");
 				}
 				else{
@@ -86,5 +118,11 @@ public class LoginController {
 
 
 		}
+
+
 }
+		public void help(){
+			helptxt.setText("Enter a Valid Username and Password, For help call 777-777-7777.");
+
+		}
 }
