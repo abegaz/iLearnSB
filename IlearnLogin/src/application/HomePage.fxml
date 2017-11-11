@@ -12,25 +12,39 @@
    <children>
       <Pane layoutY="7.0" prefHeight="106.0" prefWidth="917.0">
          <children>
-            <Label alignment="CENTER" layoutX="354.0" layoutY="29.0" prefHeight="55.0" prefWidth="210.0" text="ILearn HomePage">
+            <Label alignment="CENTER" layoutX="354.0" layoutY="29.0" prefHeight="55.0" prefWidth="210.0" text="ILearn HomePage" textFill="#c23939">
                <font>
-                  <Font size="24.0" />
+                  <Font name="System Bold" size="24.0" />
                </font>
             </Label>
-            <Button layoutX="53.0" layoutY="38.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="88.0" text="Home" />
             <Button fx:id="SignOut" layoutX="822.0" layoutY="63.0" mnemonicParsing="false" onAction="#signout" text="Sign Out" />
             <Button fx:id="User" layoutX="773.0" layoutY="26.0" mnemonicParsing="false" onAction="#user" prefHeight="25.0" prefWidth="131.0" textAlignment="CENTER" wrapText="true" />
          </children>
       </Pane>
-      <Label layoutX="707.0" layoutY="273.0" prefHeight="106.0" prefWidth="180.0" text="Welcome to the ILearn HomePage." textAlignment="CENTER" wrapText="true">
+      <Label layoutX="723.0" layoutY="131.0" prefHeight="106.0" prefWidth="180.0" text="Welcome to the ILearn HomePage." textAlignment="CENTER" wrapText="true">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="697.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../Users/kylew/Pictures/learn.jpg" />
          </image>
       </ImageView>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="227.0" prefHeight="55.0" prefWidth="105.0" text="Courses" textAlignment="CENTER" textFill="#d51212">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="Help2" layoutX="60.0" layoutY="612.0" mnemonicParsing="false" onAction="#help2" prefHeight="20.0" prefWidth="70.0" text="Help?" textFill="#2f42ea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label fx:id="NeedHelp" layoutX="72.0" layoutY="652.0" prefHeight="18.0" prefWidth="283.0" textFill="#3743ea">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
