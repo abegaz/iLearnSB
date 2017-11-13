@@ -27,7 +27,7 @@ public class LoginController {
 		@FXML TextField UserName;
 		@FXML Label helptxt;
 		@FXML PasswordField Password;
-		String use;
+		String use, pass, one, two, three;
 
 
 		public void login(ActionEvent event) throws Exception{
@@ -49,8 +49,10 @@ public class LoginController {
 				ps.setString(2, Password.getText());
 				ResultSet result = ps.executeQuery();
 				if(result.next()){
-
+					 pass = (Password.getText());
 					use = (UserName.getText());
+
+					((Node)event.getSource()).getScene().getWindow().hide();
 
 					FXMLLoader Loader = new FXMLLoader();
 					Loader.setLocation(getClass().getResource("HomePage.fxml"));
@@ -61,7 +63,7 @@ public class LoginController {
 					}
 					HomePageController display = Loader.getController();
 					display.setText(use);
-
+					display.setTextOne(pass);
 
 					Parent p = Loader.getRoot();
 					Stage stage = new Stage();
@@ -76,9 +78,6 @@ public class LoginController {
 					primaryStage.setScene(scene);
 					primaryStage.show();
 					*/
-					((Node)event.getSource()).getScene().getWindow().hide();
-
-
 
 					notice.setText("correct");
 				}
@@ -121,6 +120,9 @@ public class LoginController {
 
 
 }
+
+
+
 		public void help(){
 			helptxt.setText("Enter a Valid Username and Password, For help call 777-777-7777.");
 

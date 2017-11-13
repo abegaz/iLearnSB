@@ -42,6 +42,16 @@ public class DBConnect {
 			}catch(Exception e){
 				e.printStackTrace();
 			}
+			try{
+				Connection con = getConnection();
+						PreparedStatement statement = con.prepareStatement("SELECT CourseOne FROM users WHERE firstname = 'yen'");
+						ResultSet reslut = statement.executeQuery();
+						while(reslut.next())
+						System.out.println(reslut.getString("CourseOne"));
+						con.close();
+				}catch(Exception e){
+					e.printStackTrace();
+				}
 		}
 }
 
