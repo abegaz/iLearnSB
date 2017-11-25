@@ -2,64 +2,133 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="692.0" prefWidth="917.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="902.0" prefWidth="1112.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomePageController">
    <children>
-      <Pane layoutY="7.0" prefHeight="106.0" prefWidth="917.0">
+      <Pane layoutY="7.0" prefHeight="112.0" prefWidth="1090.0">
          <children>
-            <Label alignment="CENTER" layoutX="354.0" layoutY="29.0" prefHeight="55.0" prefWidth="210.0" text="ILearn HomePage" textFill="#c23939">
+            <Label alignment="CENTER" layoutX="372.0" layoutY="27.0" prefHeight="70.0" prefWidth="348.0" text="ILearn HomePage" textFill="#c23939">
                <font>
-                  <Font name="System Bold" size="24.0" />
+                  <Font name="System Bold" size="36.0" />
                </font>
             </Label>
-            <Button fx:id="SignOut" layoutX="822.0" layoutY="63.0" mnemonicParsing="false" onAction="#signout" text="Sign Out" />
-            <Button fx:id="User" layoutX="731.0" layoutY="26.0" mnemonicParsing="false" onAction="#user" prefHeight="25.0" prefWidth="173.0" textAlignment="CENTER" wrapText="true" />
+            <Button fx:id="SignOut" layoutX="998.0" layoutY="60.0" mnemonicParsing="false" onAction="#signout" text="Sign Out" />
+            <Button fx:id="User" layoutX="905.0" layoutY="14.0" mnemonicParsing="false" onAction="#user" prefHeight="25.0" prefWidth="173.0" textAlignment="CENTER" wrapText="true" />
          </children>
       </Pane>
-      <Label layoutX="723.0" layoutY="131.0" prefHeight="106.0" prefWidth="180.0" text="Welcome to the ILearn HomePage." textAlignment="CENTER" wrapText="true">
+      <Label layoutX="858.0" layoutY="140.0" prefHeight="120.0" prefWidth="196.0" text="Welcome to the ILearn HomePage." textAlignment="CENTER" wrapText="true">
          <font>
-            <Font size="18.0" />
+            <Font size="22.0" />
          </font>
       </Label>
-      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="29.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="179.0" fitWidth="322.0" layoutX="73.0" layoutY="62.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../../Users/kylew/Pictures/learn.jpg" />
          </image>
       </ImageView>
-      <Label alignment="CENTER" layoutX="60.0" layoutY="227.0" prefHeight="55.0" prefWidth="105.0" text="Courses" textAlignment="CENTER" textFill="#d51212">
+      <Label alignment="CENTER" layoutX="84.0" layoutY="249.0" prefHeight="59.0" prefWidth="116.0" text="Courses" textAlignment="CENTER" textFill="#d51212">
          <font>
-            <Font name="System Bold Italic" size="24.0" />
+            <Font name="System Bold Italic" size="28.0" />
          </font>
       </Label>
-      <Button fx:id="Help2" layoutX="60.0" layoutY="612.0" mnemonicParsing="false" onAction="#help2" prefHeight="20.0" prefWidth="70.0" text="Help?" textFill="#2f42ea">
+      <Button fx:id="Help2" layoutX="36.0" layoutY="802.0" mnemonicParsing="false" onAction="#help2" prefHeight="20.0" prefWidth="70.0" text="Help?" textFill="#2f42ea">
          <font>
             <Font size="14.0" />
          </font>
       </Button>
-      <Label fx:id="NeedHelp" layoutX="72.0" layoutY="652.0" prefHeight="18.0" prefWidth="283.0" textFill="#3743ea">
+      <Label fx:id="NeedHelp" layoutX="34.0" layoutY="855.0" prefHeight="18.0" prefWidth="283.0" textFill="#3743ea">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Button fx:id="Course1" layoutX="72.0" layoutY="290.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="274.0" textFill="#ea2727" wrapText="true">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Button>
-      <Button fx:id="Course2" layoutX="72.0" layoutY="369.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="274.0" wrapText="true">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Button>
-      <Button fx:id="Course3" layoutX="72.0" layoutY="454.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="274.0" wrapText="true">
-         <font>
-            <Font size="24.0" />
-         </font>
-      </Button>
+      <TabPane layoutX="82.0" layoutY="310.0" prefHeight="475.0" prefWidth="869.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+            <Tab text="Home Tab">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="42.0" layoutY="66.0" prefHeight="34.0" prefWidth="112.0" text="Assignments Due" />
+                        <Label layoutX="50.0" layoutY="30.0" prefHeight="18.0" prefWidth="166.0" text="Welcome to Your Home tab" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+          <Tab fx:id="tabOne">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane prefHeight="448.0" prefWidth="869.0">
+                           <children>
+                              <Label layoutX="40.0" layoutY="42.0" prefHeight="37.0" prefWidth="79.0" text="Label" />
+                              <Label layoutX="175.0" layoutY="48.0" prefHeight="27.0" prefWidth="111.0" text="Assignments" textFill="#d72020">
+                                 <font>
+                                    <Font name="System Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="431.0" layoutY="45.0" prefHeight="33.0" prefWidth="75.0" text="Grades" textFill="#ed2b2b">
+                                 <font>
+                                    <Font name="System Italic" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ListView layoutX="440.0" layoutY="95.0" prefHeight="249.0" prefWidth="199.0" />
+                              <ListView layoutX="179.0" layoutY="92.0" prefHeight="248.0" prefWidth="200.0" />
+                           </children></AnchorPane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="TabTwo">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <AnchorPane layoutX="-2.0" layoutY="-1.0" prefHeight="465.0" prefWidth="889.0">
+                           <children>
+                              <Label layoutX="34.0" layoutY="43.0" prefHeight="33.0" prefWidth="74.0" text="Label" />
+                              <Label layoutX="420.0" layoutY="47.0" text="Grades" textFill="#ed3a3a">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="171.0" layoutY="48.0" prefHeight="30.0" prefWidth="130.0" text="Assignments" textFill="#e82828">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <ListView layoutX="166.0" layoutY="96.0" prefHeight="229.0" prefWidth="200.0" />
+                              <ListView layoutX="444.0" layoutY="89.0" prefHeight="235.0" prefWidth="200.0" />
+                           </children>
+                        </AnchorPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tabThree">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="321.0" prefWidth="631.0">
+                     <children>
+                        <Label layoutX="37.0" layoutY="28.0" prefHeight="53.0" prefWidth="76.0" text="Label" />
+                        <Label layoutX="168.0" layoutY="46.0" prefHeight="31.0" prefWidth="130.0" text="Assignments" textFill="#e53a3a">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="423.0" layoutY="47.0" text="Grades" textFill="#da4444">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ListView layoutX="172.0" layoutY="86.0" prefHeight="257.0" prefWidth="206.0" />
+                        <ListView layoutX="427.0" layoutY="83.0" prefHeight="259.0" prefWidth="200.0" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
    </children>
 </AnchorPane>

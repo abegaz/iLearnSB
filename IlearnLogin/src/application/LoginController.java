@@ -4,10 +4,12 @@ import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.sql.PreparedStatement;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -54,6 +56,11 @@ public class LoginController {
 
 					((Node)event.getSource()).getScene().getWindow().hide();
 
+
+				            //System.out.println(String.valueOf(ONE));
+				           // Course1.setText(String.valueOf(ONE));
+
+					//String now = String.valueOf(ONE);
 					FXMLLoader Loader = new FXMLLoader();
 					Loader.setLocation(getClass().getResource("HomePage.fxml"));
 					try {
@@ -61,14 +68,39 @@ public class LoginController {
 					} catch (IOException ex){
 						Logger.getLogger(LoginController.class.getName()).log(Level.SEVERE, null, ex);
 					}
-					HomePageController display = Loader.getController();
-					display.setText(use);
-					display.setTextOne(pass);
+					Connection con = DBConnect.getConnection();
 
+					//String ONE = "0";
+					String query = ("SELECT CourseOne, CourseTwo, CourseThree FROM users WHERE password = '" + pass +"'");
+					Statement stmt = con.createStatement();
+
+				        ResultSet rs = stmt.executeQuery(query);
+
+				        while (rs.next()) {
+				           String ONE = rs.getString("CourseOne");
+				           String TWO = rs.getString("CourseTwo");
+				           String THREE = rs.getString("CourseThree");
+						//((Node)event.getSource()).getScene().getWindow().hide();
+
+					HomePageController display = Loader.getController();
+					display.setText(use, ONE, TWO, THREE);
+					//display.setText(ONE);
+					//System.out.println(String.valueOf(ONE));
+
+					//((Node)event.getSource()).getScene().getWindow().hide();
+
+try{
 					Parent p = Loader.getRoot();
 					Stage stage = new Stage();
 					stage.setScene(new Scene(p));
+
 					stage.showAndWait();
+} catch(Exception e)
+{
+	e.printStackTrace();
+}
+
+					//stage.setOnCloseRequest(e ->Platform.exit());
 
 					/*
 					Stage primaryStage = new Stage();
@@ -80,6 +112,7 @@ public class LoginController {
 					*/
 
 					notice.setText("correct");
+				}
 				}
 				else{
 					notice.setText("Invalid Username or Password");
