@@ -1,0 +1,3 @@
+ADD THIS CODE ABOVE YOUR DriverManager.getConnection(CONN_STRING, USERNAME, PASSWORD);
+
+Class.forName("com.mysql.jdbc.Driver");
